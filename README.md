@@ -57,3 +57,7 @@ urlpatterns = [
       </tr>
 ```
 - Terakhir, saya melakukan deployment dengan melakukan perintah ```git add```, ```git commit```, dan ```git push``` untuk mentransfer proyek yang telah dikerjakan ke repository pribadi github. Lalu, saya mengambil API key yang ada pada Heroku dan ditaruh ke dalam repository secret agar aplikasi dapat dibuka di web browser dengan perantara Heroku.
+
+
+### Link aplikasi
+https://victoriatugas02.herokuapp.com/katalog/
