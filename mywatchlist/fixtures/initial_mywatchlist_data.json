@@ -1,0 +1,113 @@
+[
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":1,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Modern Family",
+            "rating": 5,
+            "release_date":"2009-09-2",
+            "review":"Modern family menyajikan sitcom yang disajikan dengan komedi lucu dengan beberapa pesan moral tentang keluarga yang sangat menghibur dan memuaskan."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":2,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Black Widow",
+            "rating": 2,
+            "release_date":"2021-07-09", 
+            "review": "Black Widow menyajikan film aksi dengan alur cerita yang baik namun dengan beberapa aspek yang kurang baik sehingga membuat film kurang bagus."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":3,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Avengers : Endgame",
+            "rating": 5,
+            "release_date":"2019-04-24", 
+            "review": "Avengers : Endgame memberikan lanjutan cerita yang baik berdasarkan Infinity : War. Endgame memiliki jalan cerita baik dengan beberapa humor kecil yang membuat film jadi lebih enak ditonton."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":4,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"How I Met Your Mother",
+            "rating": 4,
+            "release_date":"2005-09-19", 
+            "review": "How I Met Your mother menyajikan sitcom yang lucu dengan beberapa moral dengan percintaan yang dikemas dengan baik serta alur cerita yang baik walaupun agak kurang baik di akhir."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":5,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"The Internship",
+            "rating": 5,
+            "release_date":"2013-05-29", 
+            "review": "The Internship menyajikan film tentang magang yang disajikan dengan komedi serta alur cerita yang baik dan pesan moral yang sangat baik sehingga film sangat patut untuk ditonton."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":6,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Morbius",
+            "rating": 1,
+            "release_date":"2022-03-30", 
+            "review": "Morbius merupakan film besutan Sony yang menurut saya gagal. Alur cerita kurang baik dan beberapa adegan bisa dibilang sangat aneh."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":7,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Top Gun : Maverick",
+            "rating": 5,
+            "release_date":"2022-05-27", 
+            "review": "Walaupun saya belum menontonnya, Top Gun : Maverick dianggap sebagai salah satu film terbaik pada tahun 2022 dengan alur cerita serta adegan-adegan aksinya yang keren."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":8,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Pengabdi Setan 2 : Communion",
+            "rating": 3,
+            "release_date":"2022-08-04", 
+            "review": "Walaupun saya belum menontonnya, Pengabdi Setan 2 : Communion mendapatkan review mixed di kalangan penonton."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":9,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Bullet Train",
+            "rating": 5,
+            "release_date":"2022-08-10", 
+            "review": "Bullet train menyajikan film laga aksi dengan komedi yang lucu dan adengan aksi yang memukau yang didukung dengan alur cerita baik sehingga membuat penonton puas."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":10,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Doctor Strange : Multiverse Of Madness",
+            "rating": 3,
+            "release_date":"2022-05-05", 
+            "review": "Doctor Strange : Multiverse Of Madness memiliki alur cerita yang menurut saya terlalu cepat sehingga filmnya terasa terlalu memaksakan."
+        }
+    }
+    
+]
