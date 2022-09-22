@@ -31,6 +31,6 @@ PBP B
 
 
 ### Link app Heroku : 
-- HTML : https://victoriatugas03.herokuapp.com/mywatchlist/html/
+- HTML : [https://victoriatugas03.herokuapp.com/mywatchlist/
 - JSON : https://victoriatugas03.herokuapp.com/mywatchlist/json/
 - XML : https://victoriatugas03.herokuapp.com/mywatchlist/xml/
