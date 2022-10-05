@@ -1,15 +1,23 @@
 {% extends 'base.html' %} {% block meta %}
-<title>Todolist</title>
+<title></title>
 {% endblock meta %} {% block content %}
 
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">To-Do-List </a>
+      <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+    </div>
+  </div>
+</nav>
+
+
 <div>
-  <h1>Todolist</h1>
+  <h1></h1>
   {% if user.is_authenticated %}
-  <h1>Hello! {{user.get_username}}</h1> 
+  <h1>Selamat datang, {{user.get_username}}</h1> 
   <button>
     <a href="{% url 'todolist:show_create_task' %}">Tambah Task Baru</a>
   </button>
-  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
 </div>
 
 <table class="table-border">
