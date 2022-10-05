@@ -1,0 +1,27 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3f2fd;
+  min-height: 100vh;
+}
+
+.thead-dark {
+  background-color: black;
+  color: #e3f2fd;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-color: aqua;
+  box-shadow: black;
+}
+
+.card {
+  border-color: aqua;
+  box-shadow: black;
+}

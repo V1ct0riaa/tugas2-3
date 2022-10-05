@@ -2,6 +2,14 @@
 <title>Todolist</title>
 {% endblock meta %} {% block content %}
 
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">To-Do-List </a>
+      <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+    </div>
+  </div>
+</nav>
+
 <form method="POST" action="">
   {% csrf_token %}
   <table>

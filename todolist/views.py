@@ -23,6 +23,15 @@ def show_todolist(request):
     }
     return render(request, "todolist.html",context)
 
+@login_required(login_url='login/')
+def show_todolistcards(request):
+    data_todolist = TodoList.objects.filter(user=request.user)
+    context = {
+    'todolist': data_todolist,
+    }
+    return render(request, "todolistcards.html",context)
+
+
 def register(request):
     form = UserCreationForm()
 

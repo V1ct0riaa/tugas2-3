@@ -10,38 +10,29 @@
   </div>
 </nav>
 
+
 <div>
   <h1></h1>
   {% if user.is_authenticated %}
   <h1>Selamat datang, {{user.get_username}}</h1> 
   <button>
     <a href="{% url 'todolist:show_create_task' %}">Tambah Task Baru</a>
-    <a href="{% url 'todolist:show_todolistcards' %}">Cek cards</a>
   </button>
-  {% else %}
-  <div></div>
   {% endif %}
 </div>
 
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Created at</th>
-      <th scope="col">Title</th>
-      <th scope="col">Description</th>
-      <th scope="col">Status</th>
-    </tr>
-  </thead>
-  <tbody>
+<div class="card" style="width: 18rem;">
     {% for task in todolist %}
-    <tr>
-      <td>{{task.date}}</td>
-      <td>{{task.title}}</td>
-      <td>{{task.description}}</td>
-	    <td>{% if task.is_finished %} Selesai {% else %} Belum Selesai {% endif %}</td>
-    </tr>
-    {% endfor %} 
-  </tbody>
-</table>
+    <div class="card p-1">
+    <div class="card-body d-flex flex-column justify-content-between gap-2">
+
+        <h5 class="card-title">Tanggal : {{task.date}}</h5>
+        <p class="card-text">Task : {{task.title}}</p>
+        <p class="card-text">Deskripsi : {{task.description}}</p>
+        <p class="card-text">Apakah sudah selesai? : {% if task.is_finished %} Selesai {% else %} Belum Selesai {% endif %}</p>
+    </div>
+      {% endfor %}
+</div>
+</div>
 
 {% endblock content %}
