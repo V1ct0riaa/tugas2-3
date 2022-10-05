@@ -11,7 +11,7 @@
   </button>
   <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
 </div>
-{% if todo %}
+
 <table class="table-border">
   <th class="table-border">Created at</th>
 
@@ -29,22 +29,14 @@
   <td class="table-border" style="text-align: center;">{% if task.is_finished %} Selesai {% else %} Belum Selesai {% endif %}</td>
 
 
-  <td class="table-border" style="text-align: center;">
-    {% if task.is_finished %}
-    <input type="checkbox" onclick="location.href=`{% url 'todolist:update' task.id %}`" checked/>
-        {% else %}
-        <input type="checkbox" onclick="location.href=`{% url 'todolist:update' task.id %}`"/>
-        {% endif %}
-  </td>
-  <td class="table-border" style="text-align: center;"><a href="{% url 'todolist:delete' task.id %}">Delete</a></td>
-
+ 
 </tr>
 {% endfor %}
 </table>
 {% else %}
 <div></div>
 {% endif %}
-{% endif %}
+
 
 
 {% endblock content %}

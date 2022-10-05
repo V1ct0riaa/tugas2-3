@@ -60,13 +60,20 @@ def logout_user(request):
 
 @login_required(login_url='login/')
 def show_create_task(request):
-    if request.method == 'POST':
-        title = request.POST.get('title')
-        description = request.POST.get('description')
-        response = HttpResponseRedirect(reverse("todolist:show_todolist")) 
-        return response
+    context= {}
+    forms = TodolistForm(request.POST or None)
+    if forms.is_valid() and request.method == 'POST':
+        todolist = forms.save(commit=False)
+        print(todolist)
+        todolist.date = datetime.datetime.now()
+        print(todolist.date)
+        todolist.user = request.user
+        print(todolist.user)
+        todolist.save()
+        return HttpResponseRedirect('/todolist')
 
-    return render(request, "createTask.html")
+    context['form'] = forms    
+    return render(request, "createTask.html",context)
 
 def finish_task(request,id):
 
