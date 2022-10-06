@@ -79,3 +79,5 @@ PBP B
   </body>
 </html>
 ```
+
+File diatas sudah memiliki link bootstrap sehingga dapat menerapkan berbagai macam implementasi bootstrap pada file html templates todolist.
